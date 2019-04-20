@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace TapHelper
+namespace taphelper
 {
     public class AdbCronClicker
     {
@@ -27,8 +27,8 @@ namespace TapHelper
 
         public static void startClick(int clickX, int clickY, Process clickAdbProcess, int intervelMillions)
         {
-            AdbCronClicker cronClicker = new AdbCronClicker(clickX, clickY, clickAdbProcess);
-            Timer timer = new Timer();
+            var cronClicker = new AdbCronClicker(clickX, clickY, clickAdbProcess);
+            var timer = new Timer();
             timer.Enabled = true;
             timer.AutoReset = true;
             timer.Interval = intervelMillions;
