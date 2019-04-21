@@ -143,7 +143,6 @@ namespace taphelper
         /// <returns></returns>
         public static Tuple<int, int> GetClickCurPoint(Tuple<int, int> cur, Tuple<int, int> eventCur)
         {
-            Console.WriteLine("请点击你想自动点击的位置:");
             int x = 0;
             int y = 0;
             using (Process getPintProcess = CmdUtils.createCmd())
